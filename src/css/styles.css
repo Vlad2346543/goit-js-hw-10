@@ -1,18 +1,116 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+}
+
+.nav-item{
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  
+}
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .timer {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .field {
+      text-align: center;
+    }
+    .value {
+      font-size: 2rem;
+      display: block;
+    }
+    .label {
+      font-size: 0.8rem;
+      color: #555;
+    }
+    input, button {
+      font-size: 1rem;
+      padding: 5px 10px;
+      margin-right: 10px;
+    }
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .black-link{
+        text-decoration: none;
+        color: black;
+         
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+        }
+
+        input[type="number"] {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 5px;
+        }
+
+        fieldset label {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-weight: normal;
+            gap: 5px;
+            margin-bottom: 5px;
+        }
+        
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
